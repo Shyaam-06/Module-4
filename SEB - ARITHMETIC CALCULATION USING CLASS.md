@@ -33,13 +33,59 @@ To write a Python program to perform addition and division operations using a cl
 ---
 
 ### PROGRAM
+class calculate:
 
-```
+def setvalues(self,a,b):
 
+self.a=a
 
+   self.b=b
 
-```
+ def add(self):
+      
+ print(f"Result:  {self.a+self.b}")
+    
+ def sub(self):
+
+   print(f"Result:  {self.a-self.b}")
+
+calc=calculate()
+
+a=int(input())
+
+b=int(input())
+
+calc.setvalues(a,b)
+
+while True:
+
+   choice=int(input())
+
+   if choice==1:
+
+   calc.add()
+
+   elif choice==2:
+
+   calc.sub()
+
+   elif choice==0:
+
+   print("Exiting!")
+
+   break
+
+   else:
+
+   print("Invalid input")
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/f4801299-d8ce-447b-85de-c2bb696f6064)
 
 ### RESULT
+Thus the Python program to perform addition and division operations using a class. The class should be named Saveetha, and the function names should be setvalues (to set a and b values), addand sub. The program should handle the following cases:
+
+choice 1 → Perform addition
+choice 2 → Perform subtraction
+choice 0 → Exit
+For other choices, print 'Invalid choice' was successfully executed.
