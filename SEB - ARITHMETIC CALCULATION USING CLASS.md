@@ -45,9 +45,9 @@ self.a=a
       
  print(f"Result:  {self.a+self.b}")
     
- def sub(self):
+ def div(self):
 
-   print(f"Result:  {self.a-self.b}")
+   print(f"Result:  {self.a/self.b}")
 
 calc=calculate()
 
@@ -67,7 +67,7 @@ while True:
 
    elif choice==2:
 
-   calc.sub()
+   calc.div()
 
    elif choice==0:
 
@@ -83,9 +83,8 @@ while True:
 ![image](https://github.com/user-attachments/assets/f4801299-d8ce-447b-85de-c2bb696f6064)
 
 ### RESULT
-Thus the Python program to perform addition and division operations using a class. The class should be named Saveetha, and the function names should be setvalues (to set a and b values), addand sub. The program should handle the following cases:
-
-choice 1 → Perform addition
-choice 2 → Perform subtraction
-choice 0 → Exit
-For other choices, print 'Invalid choice' was successfully executed.
+Thus the Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
+- `choice 1` → Perform addition  
+- `choice 2` → Perform division  
+- `choice 0` → Exit  
+- For other choices, print 'Invalid choice'
