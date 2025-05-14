@@ -28,7 +28,7 @@ To write a Python program that reads a file and counts the frequency of each cha
 ---
 
 ### PROGRAM
-
+---
 from collections import defaultdict
 
 def create_file(file_path, content):
@@ -50,7 +50,7 @@ for i in content:
     
 return frequency
 
-
+---
 ### OUTPUT
 ![image](https://github.com/user-attachments/assets/3a5cce20-0d2b-46c9-8c96-936a08972431)
 ![image](https://github.com/user-attachments/assets/2b0b2c25-415a-415d-8f7f-21d65bf806ab)
