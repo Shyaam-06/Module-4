@@ -33,58 +33,64 @@ To write a Python program to perform addition and division operations using a cl
 ---
 
 ### PROGRAM
-class calculate:
+---
 
-def setvalues(self,a,b):
+### PROGRAM
 
-self.a=a
+```
+#Reg.NO-212223060262
+#Name-Shyaam S
+class Saveetha:
+    def __init__(self):
+        self.a = 0
+        self.b = 0
 
-   self.b=b
+    def setvalues(self, a, b):
+        self.a = a
+        self.b = b
 
- def add(self):
-      
- print(f"Result:  {self.a+self.b}")
-    
- def div(self):
+    def add(self):
+        return self.a + self.b
 
-   print(f"Result:  {self.a/self.b}")
+    def div(self):
+        if self.b == 0:
+            return "Error: Division by zero is not allowed."
+        return self.a / self.b
 
-calc=calculate()
+def main():
+    obj = Saveetha()
+    a = int(input("Enter value of a: "))
+    b = int(input("Enter value of b: "))
+    obj.setvalues(a, b)
 
-a=int(input())
+    while True:
+        print("\nMenu:")
+        print("1. Addition")
+        print("2. Division")
+        print("0. Exit")
+        choice = int(input("Enter your choice: "))
 
-b=int(input())
+        if choice == 1:
+            print("Result of addition:", obj.add())
+        elif choice == 2:
+            result = obj.div()
+            print("Result of division:", result)
+        elif choice == 0:
+            print("Exiting!")
+            break
+        else:
+            print("Invalid choice")
 
-calc.setvalues(a,b)
+main()
 
-while True:
 
-   choice=int(input())
 
-   if choice==1:
 
-   calc.add()
-
-   elif choice==2:
-
-   calc.div()
-
-   elif choice==0:
-
-   print("Exiting!")
-
-   break
-
-   else:
-
-   print("Invalid input")
+```
 
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/f4801299-d8ce-447b-85de-c2bb696f6064)
+![image](https://github.com/user-attachments/assets/2525becc-2f2d-43af-984e-d34050a82329)
+
 
 ### RESULT
-Thus the Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
+Thus,the Python program using the Saveetha class successfully performed addition and division based on user choice.
